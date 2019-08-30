@@ -28,6 +28,9 @@ background-position: bottom;
 background-size: cover;
 }
 
+.selcls {
+  width: auto;
+}
 .card-body, {
   padding: 50px;
   height: 900px;
