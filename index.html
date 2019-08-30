@@ -1,45 +1,79 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <script src="js/jquery-3.4.1.js"></script>
-    <script src="js/scripts.js"></script>
-    <title>Pizza</title>
-  </head>
-  <body>
+
+<head>
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Pizza</title>
+</head>
+<body>
+  <div class="container">
     <h1>Pizza</h1>
     <form id="pizza-order">
-            <div class="form-group">
-              <div id="userName">
-                <label id="nameLabel" for="name">Start with typing your name here:</label>
-                <input type="text" name="name" id="name" value="">
-              </div>
+      <div class="form-group">
+        <div id="nameSection">
+          <label id="nameLabel" for="name">Start with typing your name here:</label>
+          <input type="text" name="name" id="name" value="">
+        </div>
+        <div id="sizeSection">
+          <label for="size">Select your size</label>
+          <select id="size" name="size">
+            <option value="0">--</option>
+            <option value=12>Small</option>
+            <option value=16>Medium</option>
+            <option value=20>Large</option>
+          </select>
+        </div>
 
-              <div id="sizeSection">
-                <label for="size">Select your size</label>
-                <select id="size" name="size">
-                  <option value=12>Small</option>
-                  <option value=16>Medium</option>
-                  <option value=20>Large</option>
-                </select>
-              </div>
+        <div id="toppingSection">
+          <label for="topping">Select your topping</label>
+          <select id="topping" name="">
+            <option value="0">--</option>
+            <option value="2">Cheese</option>
+            <option value="2">Margherita</option>
+            <option value="3">Veggie</option>
+            <option value="5">Pepperoni</option>
+            <option value="7">Meaty Concoction</option>
+          </select>
+        </div>
 
-              <div id="toppingSection">
-                <label for="topping">Select your topping</label>
-                <select id="topping" name="">
-                  <option value="1">Cheese</option>
-                  <option value="5">Pepperoni</option>
-                </select>
-              </div>
+        <!-- <div id="sideSection">
+          <label for="side">Select your topping</label>
+          <select id="side" name="">
+            <option value="1">Salad</option>
+            <option value="2">Garlic Knots</option>
+            <option value="3">Veggie</option>
+            <option value="5">Pepperoni</option>
+            <option value="7">Meaty Concoction</option>
+          </select>
+        </div> -->
 
-              <div class="submit-button">
-                <button id="submitButton" type="submit" name="button">Submit!</button>
-              </div>
-            </div>
-          </form>
-          <div class="output">
-            <p> <span id=name></span>, your total is <span id=total> </span>. It will be ready in 30 minutes. Thanks for your order!</p>
-          </div>
-        </body>
+
+  <div id="sideSection">
+    <input type="checkbox" id="salad" name="" value="5">
+    <label for="salad">Add side salad ($5)</label>
+
+    <input type="checkbox" id="garlicKnots" name="" value="5">
+    <label for="garlicKnots">Add garlic knots ($5)</label>
+    <input type="checkbox" id="cookie" name="" value="2">
+    <label for="cookie">Add cookie ($1)</label>
+    <input type="checkbox" id="brownie" name="" value="3">
+    <label for="brownie">Add brownie ($3)</label>
+
+  </div>
+
+
+        <div class="submit-button">
+          <button id="submitButton" type="submit" name="button">Submit!</button>
+        </div>
+      </div>
+    </form>
+    <div class="output">
+      <p> <span id=nameOutput></span>, your total is $<span id=totalOutput> </span>. It will be ready in 30 minutes. Thanks for your order!</p>
+    </div>
+  </div>
+</body>
+
 </html>
