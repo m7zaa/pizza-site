@@ -1,15 +1,68 @@
+
+
 .output, .zero {
   display: none;
 }
 
+
+
+p {
+  font-weight:bolder;
+}
 .jumbotron {
   text-align: center;
 }
 
 .card-body {
+
   padding: 50px;
   background-image: url("../img/background.jpg");
+  height: 900px;
 }
 
 body {
+  font-weight:bolder;
+
 }
+
+.form-group {
+  padding-left: 60px;
+}
+
+.sides {
+  margin-top: 60px;
+  margin-bottom: 30px;
+
+}
+
+.submit-button {
+  margin-top: 60px;
+}
+.pizza {
+  margin-bottom: 30px;
+
+
+}
+
+#sizeSection {
+}
+
+#toppingSection {
+  margin-top: 30px;
+
+}
+
+
+#saladSection, #knotSection, #cookieSection, #brownieSection {
+  margin-bottom: 30px;
+
+}
+
+
+
+
+#nameSection {
+margin-bottom: 60px;
+margin-top: 60px;
+}
+#nameSection, .pizza, #sizeSection, #toppingSection,
