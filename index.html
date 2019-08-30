@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Pizza</title>
+  </head>
+  <body>
+    <h1>Pizza</h1>
+    <form id="pizza-order">
+            <div class="form-group">
+              <div id="userName">
+                <label id="nameLabel" for="name">Start with typing your name here:</label>
+                <input type="text" name="name" id="name" value="">
+              </div>
+
+              <div id="sizeSection">
+                <label for="size">Select your size</label>
+                <select id="size" name="size">
+                  <option value="small">Small</option>
+                  <option value="medium">Medium</option>
+                  <option value="large">Large</option>
+                </select>
+              </div>
+
+              <div id="toppingsSection">
+                <label for="toppings">Select your toppings</label>
+                <select id="toppings" name="">
+                  <option value="cheese">Cheese</option>
+                  <option value="pepperoni">Pepperoni</option>
+                </select>
+              </div>
+
+              <div class="submit-button">
+                <button id="submitButton" type="submit" name="button">Submit!</button>
+              </div>
+            </div>
+          </form>
+        </body>
+</html>
