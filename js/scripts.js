@@ -39,12 +39,14 @@ $(document).ready(function() {
     if (total === 0) {
       $(".zero").show();
     }
-    else if (toppings === 0) {
-      $(".zero").show();
+    else if (newPizza.size >= 1 && newPizza.topping === 0) {
+      $(".noToppings").show();
 
     }
     else {
       $(".zero").hide();
+      $(".noToppings").hide();
+
       $(".output").show();
       $("#nameOutput").text(userName);
       $("#totalOutput").text(total);
