@@ -2,7 +2,7 @@
 <html>
 
 <head>
-<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Bangers&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Bangers&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
   <link rel="stylesheet" href="css/styles.css" type="text/css">
   <script src="js/jquery-3.4.1.js"></script>
@@ -12,17 +12,24 @@
 
 <body>
   <div class="container">
-
     <div class="jumbotron">
-
       <h1>Pizzaz Pizza</h1>
+    </div>
+    <div class="outputCard">
+      <div class="card-body output zero">
+
+        <div class="output">
+          <p> <span id=nameOutput></span>, your total is $<span id=totalOutput> </span>. It will be ready in 30 minutes. Thanks for your order!</p>
+        </div>
+        <div class="zero">
+          <p>You have not selected anything.</p>
+        </div>
+      </div>
     </div>
     <div class="card">
       <div class="card-body">
-
         <form id="pizza-order">
           <div class="form-group">
-
             <div class="pizza">
               <h3>Pizzas</h3>
             </div>
@@ -35,7 +42,6 @@
                 <option value=20>Large $20</option>
               </select>
             </div>
-
             <div id="toppingSection">
               <label for="topping">Select your topping</label>
               <select id="topping" name="">
@@ -60,7 +66,6 @@
                 <option value=12>4</option>
               </select>
             </div>
-
             <div id="knotSection">
               <label for="garlicKnots">Garlic Knots(3)-$5/each</label>
               <select id="garlicKnots" name="">
@@ -71,7 +76,6 @@
                 <option value=20>4</option>
               </select>
             </div>
-
             <div id="cookieSection">
               <label for="cookie">Chocolate Chip Cookie-$2/each</label>
               <select id="cookie" name="">
@@ -82,7 +86,6 @@
                 <option value=8>4</option>
               </select>
             </div>
-
             <div id="brownieSection">
               <label for="brownie">Brownie-$3/each</label>
               <select id="brownie" name="">
@@ -93,38 +96,18 @@
                 <option value=12>4</option>
               </select>
             </div>
-
-
             <div id="nameSection">
-              <label id="nameLabel" for="name">Name   </label>
+              <label id="nameLabel" for="name">Name </label>
               <input type="text" name="name" id="name" value="">
             </div>
-
             <div class="submit-button">
-
               <button type="submit" id="submitButton" class="btn btn-light btn-lg">Pick Up</button>
-
-              <!-- <button id="submitButton" type="submit" name="button">Submit!</button> -->
             </div>
           </div>
         </form>
       </div>
     </div>
-
-    <div class="outputCard">
-      <div class="card-body output zero">
-
-    <div class="output">
-      <p> <span id=nameOutput></span>, your total is $<span id=totalOutput> </span>. It will be ready in 30 minutes. Thanks for your order!</p>
-    </div>
-
-    <div class="zero">
-      <p>You have not selected anything.</p>
-    </div>
   </div>
-</div>
-</div>
-
 </body>
 
 </html>

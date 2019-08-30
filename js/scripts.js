@@ -39,6 +39,10 @@ $(document).ready(function() {
     if (total === 0) {
       $(".zero").show();
     }
+    else if (toppings === 0) {
+      $(".zero").show();
+
+    }
     else {
       $(".zero").hide();
       $(".output").show();
