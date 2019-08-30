@@ -6,14 +6,16 @@ var salad
 var knots
 var cookie
 var brownine
+var sides
 
-function Pizza(size, topping) {
+function Pizza(size, topping, side) {
   this.size = size,
-  this.topping = topping
+  this.topping = topping;
+  this.side = side
 }
 
 Pizza.prototype.totalCost = function() {
-  return sizes + toppings + salad;
+  return sizes + toppings + sides;
 }
 
 $(document).ready(function() {
@@ -22,9 +24,13 @@ $(document).ready(function() {
     userName = $("input#name").val();
     sizes = parseInt($("select#size").val());
     toppings = parseInt($("select#topping").val());
-    salad = $("#salad").val();
 
-    var newPizza = new Pizza (sizes, toppings);
+    salad = parseInt($("select#salad").val());
+    knots = parseInt($("select#garlicKnots").val());
+    cookie = parseInt($("select#cookie").val());
+    brownie = parseInt($("select#brownie").val());
+     sides = (knots + salad);
+    var newPizza = new Pizza (sizes, toppings, sides);
     total = newPizza.totalCost();
     $(".output").show();
     $("#nameOutput").text(userName);
@@ -32,7 +38,7 @@ $(document).ready(function() {
 
 
 
-console.log(salad);
+console.log(sides);
 
 
 
