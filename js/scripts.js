@@ -1,7 +1,7 @@
-// var userName
-// var sizes
-// var toppings
-// var total
+var userName
+var sizes
+var toppings
+var total
 
 function Pizza(size, topping) {
   this.size = size,
@@ -15,13 +15,15 @@ Pizza.prototype.totalCost = function() {
 $(document).ready(function() {
   $("#pizza-order").submit(function(event) {
     event.preventDefault();
-    var userName = parseInt($("input#userName").val());
-    var sizes = parseInt($("select#size").val());
-    var toppings = parseInt($("select#topping").val());
+    userName = $("input#userName").val();
+    sizes = parseInt($("select#size").val());
+    toppings = parseInt($("select#topping").val());
     var newPizza = new Pizza (sizes, toppings);
-    var total = newPizza.totalCost();
+    total = newPizza.totalCost();
     console.log(newPizza);
     console.log(total);
+    console.log(userName);
+    $("#name").text(userName);
 
 
 
