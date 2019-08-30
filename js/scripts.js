@@ -29,13 +29,19 @@ $(document).ready(function() {
     knots = parseInt($("select#garlicKnots").val());
     cookie = parseInt($("select#cookie").val());
     brownie = parseInt($("select#brownie").val());
-     sides = (knots + salad);
+     sides = (knots + salad + cookie + brownie);
     var newPizza = new Pizza (sizes, toppings, sides);
     total = newPizza.totalCost();
-    $(".output").show();
-    $("#nameOutput").text(userName);
-    $("#totalOutput").text(total);
 
+    if (total === 0) {
+      $(".zero").show();
+    } else {
+      $(".output").show();
+      $(".zero").hide();
+      $("#nameOutput").text(userName);
+      $("#totalOutput").text(total);
+
+    }
 
 
 console.log(sides);
