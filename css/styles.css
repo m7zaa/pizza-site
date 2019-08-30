@@ -1,4 +1,4 @@
-.output, .zero {
+.output, .zero, .noToppings, .noName {
   display: none;
 }
 
@@ -18,8 +18,9 @@ h1{
 }
 .card {
   border-radius: 8px;
-  background-image: url("../img/background.jpg");
-
+  background-image: url("../img/order.jpg");
+background-position: bottom;
+background-size: cover;
 }
 
 .card-body, {
@@ -34,6 +35,17 @@ h1{
   border-radius: 20px;
 
 }
+
+.outputCard {
+  padding-left: 60px;
+  font-family: 'Bangers', cursive;
+  border-radius: 10px;
+font-size: 60px;
+margin-bottom: 30px;
+background-image: url("../img/background.jpg");
+background-position: left;
+}
+
 
 .sides, .pizza {
   margin-top: 60px;
@@ -57,17 +69,4 @@ margin-top: 60px;
 
 .submit-button {
   margin-top: 60px;
-}
-
-
-
-
-
-
-
-
-
-.outputCard {
-  background-image: url("../img/order.jpg");
-
 }

@@ -36,16 +36,25 @@ $(document).ready(function() {
     sides = (knots + salad + cookie + brownie);
     var newPizza = new Pizza (sizes, toppings, sides);
     total = newPizza.totalCost();
-    if (total === 0) {
+    if (total === 0 || newPizza.topping > newPizza.size) {
+      $(".noToppings").hide();
       $(".zero").show();
     }
     else if (newPizza.size >= 1 && newPizza.topping === 0) {
+      $(".zero").hide();
       $(".noToppings").show();
+
+    }
+    else if (userName === "") {
+      $(".zero").hide();
+      $(".noToppings").hide();
+      $(".noName").show();
 
     }
     else {
       $(".zero").hide();
       $(".noToppings").hide();
+      $(".noName").hide();
 
       $(".output").show();
       $("#nameOutput").text(userName);
