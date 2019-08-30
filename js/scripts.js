@@ -1,6 +1,7 @@
 //backend logic
 
 var userName
+var phone
 var sizes
 var toppings
 var total
@@ -26,9 +27,9 @@ $(document).ready(function() {
   $("#pizza-order").submit(function(event) {
     event.preventDefault();
     userName = $("input#name").val();
+    phone = $("input#phone").val();
     sizes = parseInt($("select#size").val());
     toppings = parseInt($("select#topping").val());
-
     salad = parseInt($("select#salad").val());
     knots = parseInt($("select#garlicKnots").val());
     cookie = parseInt($("select#cookie").val());
@@ -45,7 +46,7 @@ $(document).ready(function() {
       $(".noToppings").show();
 
     }
-    else if (userName === "") {
+    else if (userName === "" || phone ==="") {
       $(".zero").hide();
       $(".noToppings").hide();
       $(".noName").show();
