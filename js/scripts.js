@@ -40,8 +40,8 @@ $(document).ready(function() {
       $(".zero").show();
     }
     else {
-      $(".output").show();
       $(".zero").hide();
+      $(".output").show();
       $("#nameOutput").text(userName);
       $("#totalOutput").text(total);
     }

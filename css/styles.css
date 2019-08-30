@@ -1,68 +1,73 @@
-
-
 .output, .zero {
   display: none;
 }
 
-
-
-p {
-  font-weight:bolder;
+body {
+  background-color: #F3ECE2;
 }
+
 .jumbotron {
+  margin-top: 30px;
+  background-image: url("../img/checker.jpg");
   text-align: center;
 }
 
-.card-body {
-
-  padding: 50px;
+h1{
+  font-family: 'Bangers', cursive;
+  font-size: 150px;
+}
+.card {
+  border-radius: 8px;
   background-image: url("../img/background.jpg");
-  height: 900px;
+
 }
 
-body {
-  font-weight:bolder;
-
+.card-body, {
+  padding: 50px;
+  height: 900px;
+  border-radius: 8px;
 }
 
 .form-group {
   padding-left: 60px;
+  font-family: 'Bangers', cursive;
+  border-radius: 20px;
+
 }
 
-.sides {
+.sides, .pizza {
   margin-top: 60px;
   margin-bottom: 30px;
 
 }
 
-.submit-button {
-  margin-top: 60px;
-}
-.pizza {
-  margin-bottom: 30px;
-
-
-}
-
-#sizeSection {
-}
 
 #toppingSection {
   margin-top: 30px;
-
 }
-
 
 #saladSection, #knotSection, #cookieSection, #brownieSection {
   margin-bottom: 30px;
-
 }
-
-
-
 
 #nameSection {
 margin-bottom: 60px;
 margin-top: 60px;
 }
-#nameSection, .pizza, #sizeSection, #toppingSection,
+
+.submit-button {
+  margin-top: 60px;
+}
+
+
+
+
+
+
+
+
+
+.outputCard {
+  background-image: url("../img/order.jpg");
+
+}
