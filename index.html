@@ -8,100 +8,106 @@
   <script src="js/scripts.js"></script>
   <title>Pizza</title>
 </head>
+
 <body>
   <div class="container">
-    <h1>Pizza</h1>
-    <form id="pizza-order">
-      <div class="form-group">
-        <div id="nameSection">
-          <label id="nameLabel" for="name">Start with typing your name here:</label>
-          <input type="text" name="name" id="name" value="">
-        </div>
-        <div id="sizeSection">
-          <label for="size">Select your size</label>
-          <select id="size" name="size">
-            <option value=0>--</option>
-            <option value=12>Small</option>
-            <option value=16>Medium</option>
-            <option value=20>Large</option>
-          </select>
-        </div>
 
-        <div id="toppingSection">
-          <label for="topping">Select your topping</label>
-          <select id="topping" name="">
-            <option value=0>--</option>
-            <option value=2>Cheese</option>
-            <option value=2>Margherita</option>
-            <option value=3>Veggie</option>
-            <option value=5>Pepperoni</option>
-            <option value=7>Meaty Concoction</option>
-          </select>
-        </div>
+    <div class="jumbotron">
 
-        <div id="saladSection">
-          <label for="salad">Side Salad-$3</label>
-          <select id="salad" name="">
-            <option value=0>--</option>
-            <option value=3>1</option>
-            <option value=6>2</option>
-            <option value=9>3</option>
-            <option value=12>4</option>
-          </select>
-        </div>
+      <h1>Pizzaz Pizza</h1>
+    </div>
+    <div class="card">
+      <div class="card-body">
 
-        <div id="knotSection">
-          <label for="garlicKnots">Garlic Knots-$5</label>
-          <select id="garlicKnots" name="">
-            <option value=0>--</option>
-            <option value=5>1</option>
-            <option value=10>2</option>
-            <option value=15>3</option>
-            <option value=20>4</option>
-          </select>
-        </div>
+        <form id="pizza-order">
+          <div class="form-group">
+            <div id="nameSection">
+              <label id="nameLabel" for="name">Start with typing your name here:</label>
+              <input type="text" name="name" id="name" value="">
+            </div>
 
-        <div id="cookieSection">
-          <label for="cookie">Chocolate Chip Cookie-$2</label>
-          <select id="cookie" name="">
-            <option value=0>--</option>
-            <option value=2>1</option>
-            <option value=4>2</option>
-            <option value=6>3</option>
-            <option value=8>4</option>
-          </select>
-        </div>
+            <div class="pizza">
+              <h3>Pizzas</h3>
+            </div>
+            <div id="sizeSection">
+              <label for="size">Select your size</label>
+              <select id="size" name="size">
+                <option value=0>--</option>
+                <option value=12>Small $12</option>
+                <option value=16>Medium $16</option>
+                <option value=20>Large $20</option>
+              </select>
+            </div>
 
-        <div id="brownieSection">
-          <label for="brownie">Brownie-$3</label>
-          <select id="brownie" name="">
-            <option value=0>--</option>
-            <option value=3>1</option>
-            <option value=6>2</option>
-            <option value=9>3</option>
-            <option value=12>4</option>
-          </select>
-        </div>
+            <div id="toppingSection">
+              <label for="topping">Select your topping</label>
+              <select id="topping" name="">
+                <option value=0>--</option>
+                <option value=2>Cheese +$2</option>
+                <option value=2>Margherita +$2</option>
+                <option value=3>Veggie +$3</option>
+                <option value=5>Pepperoni +$5</option>
+                <option value=7>Meaty Concoction +$7</option>
+              </select>
+            </div>
+            <div class="sides">
+              <h3>Sides</h3>
+            </div>
+            <div id="saladSection">
+              <label for="salad">Side Salad-$3/each</label>
+              <select id="salad" name="">
+                <option value=0>--</option>
+                <option value=3>1</option>
+                <option value=6>2</option>
+                <option value=9>3</option>
+                <option value=12>4</option>
+              </select>
+            </div>
 
+            <div id="knotSection">
+              <label for="garlicKnots">Garlic Knots(3)-$5/each</label>
+              <select id="garlicKnots" name="">
+                <option value=0>--</option>
+                <option value=5>1</option>
+                <option value=10>2</option>
+                <option value=15>3</option>
+                <option value=20>4</option>
+              </select>
+            </div>
 
-  <!-- <div id="sideSection">
-    <input type="checkbox" id="salad" name="" value=5>
-    <label for="salad">Add side salad ($5)</label>
+            <div id="cookieSection">
+              <label for="cookie">Chocolate Chip Cookie-$2/each</label>
+              <select id="cookie" name="">
+                <option value=0>--</option>
+                <option value=2>1</option>
+                <option value=4>2</option>
+                <option value=6>3</option>
+                <option value=8>4</option>
+              </select>
+            </div>
 
-    <input type="checkbox" id="garlicKnots" name="" value=5>
-    <label for="garlicKnots">Add garlic knots ($5)</label>
-    <input type="checkbox" id="cookie" name="" value=2>
-    <label for="cookie">Add cookie ($1)</label>
-    <input type="checkbox" id="brownie" name="" value=3>
-    <label for="brownie">Add brownie ($3)</label>
-  </div> -->
+            <div id="brownieSection">
+              <label for="brownie">Brownie-$3/each</label>
+              <select id="brownie" name="">
+                <option value=0>--</option>
+                <option value=3>1</option>
+                <option value=6>2</option>
+                <option value=9>3</option>
+                <option value=12>4</option>
+              </select>
+            </div>
 
-
-        <div class="submit-button">
-          <button id="submitButton" type="submit" name="button">Submit!</button>
-        </div>
+            <div class="submit-button">
+              <button id="submitButton" type="submit" name="button">Submit!</button>
+            </div>
+          </div>
+        </form>
       </div>
-    </form>
+    </div>
+
+    <div class="card">
+      <div class="card-body output zero">
+
     <div class="output">
       <p> <span id=nameOutput></span>, your total is $<span id=totalOutput> </span>. It will be ready in 30 minutes. Thanks for your order!</p>
     </div>
@@ -110,6 +116,9 @@
       <p>You have not selected anything.</p>
     </div>
   </div>
+</div>
+</div>
+
 </body>
 
 </html>
